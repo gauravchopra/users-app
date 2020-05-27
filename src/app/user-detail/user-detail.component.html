@@ -1,0 +1,11 @@
+<div *ngIf="userDetails">
+
+ <ul>
+  <li *ngFor="let userDetail of userDetails">
+
+    <span class="badge">{{userDetail.userId}}</span> {{userDetail.id}}
+     <span class="badge">{{userDetail.title}}</span> {{userDetail.body}}
+  </li>
+</ul>
+
+</div>
