@@ -20,9 +20,10 @@ this.messageService.add('UserService: fetched users');
    return this.http.get<User[]>(this.usersUrl);
 }
 
-getUserPosts(id:number):Observable<UserDetails[]>{
+async getUserPosts(id:number):Promise<UserDetails[]>{
 	this.messageService.add('UserService: fetched user details for user'+id);
-	return this.http.get<UserDetails[]>(this.userDetailUrl+id);
+	const t = await this.http.get<UserDetails[]>(this.userDetailUrl+id).toPromise();
+	return t;
 }
 
 private log(message: string) {

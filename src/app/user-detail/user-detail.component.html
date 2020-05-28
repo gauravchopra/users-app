@@ -1,11 +1,15 @@
 <div *ngIf="userDetails">
 
- <ul>
-  <li *ngFor="let userDetail of userDetails">
-
-    <span class="badge">{{userDetail.userId}}</span> {{userDetail.id}}
-     <span class="badge">{{userDetail.title}}</span> {{userDetail.body}}
-  </li>
-</ul>
+<table border="1">
+	<th>User Id</th>
+	<th>Title</th>
+	<th>Body</th>
+	<tr *ngFor="let userDetail of userDetails">
+		<td>{{userDetail.userId}}</td>
+		<td>{{userDetail.title}}</td>
+		<td>{{userDetail.body}}</td>
+	</tr>
+</table>
+ 
 
 </div>

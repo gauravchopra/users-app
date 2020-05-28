@@ -28,7 +28,8 @@ export class UsersComponent implements OnInit {
 
   getUserPosts(id:number):void{
   	this.userService.getUserPosts(id)
-  	.subscribe(userDetails=>this.userDetails=userDetails);
+  	.then(userDetails=>this.userDetails=userDetails
+    );
   }
 
   onSelect(user: User): void {
