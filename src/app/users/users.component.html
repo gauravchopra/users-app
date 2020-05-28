@@ -1,11 +1,31 @@
 
+ 
 
-<ul class="users">
+     
+     <form >
+
+     	<table>
+     		
+     		<tr >
+     			<td>
+     				<ul class="users">
   <li *ngFor="let user of users"
     [class.selected]="user === selectedUserDetails"
     (click)="onSelect(user)">
     <span class="badge">{{user.id}}</span> {{user.name}}
   </li>
 </ul>
+
+     			</td>
+
+     			
+
+     		</tr>
+
+     	</table>
+     	
+</form>
+
+
 
 <app-user-detail [userDetails]="selectedUserDetails"></app-user-detail>
