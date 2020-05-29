@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { User } from './user';
 import { UserDetails } from './userDetails';
-import { USERS } from './mock-users';
+
 import { Observable, of } from 'rxjs';
 import { MessageService } from './message.service';
 

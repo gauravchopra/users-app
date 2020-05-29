@@ -54,6 +54,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import { UserSearchComponent } from './user-search/user-search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,9 @@ import { UserSearchComponent } from './user-search/user-search.component';
     ReactiveFormsModule,
     HttpClientModule,
     MatButtonModule,
+    MatTableModule,
 MatAutocompleteModule,
+BrowserAnimationsModule,
     
     MatInputModule,
     MatRippleModule
